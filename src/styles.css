@@ -8,4 +8,131 @@
 body {
   overscroll-behavior-y: none;
   overscroll-behavior-x: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  width: 1000px;
+  height: 90vh;
+  background-color: white;
+  overflow: hidden;
+}
+
+#Menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  width: 30%;
+  background-color: lightgray;
+  padding: 40px;
+}
+
+#Menu-title {
+  padding-bottom: 10px;
+}
+
+#Content {
+  width: 70%;
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#Content-description {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+}
+
+#Content-title-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#Project-list {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#Project-item-list {
+  color: rgba(0, 0, 0, 0.7);
+  flex: 2;
+}
+
+.project-button {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.project-button:hover {
+  cursor: pointer;
+}
+
+#Project-ul,
+#Item-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Item-button,
+#Content-add-item {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+#Add-project {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#Add-project:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Item-details {
+  display: flex;
+  padding: 10px 0px;
+  margin-top: 10px;
+  border-top: 2px solid darkgray;
+  flex-direction: column;
+  color: gray;
+  font-size: 14px;
+  gap: 10px;
+}
+
+.Item-config {
+  display: flex;
+  font-size: 12px;
+  gap: 10px;
+  flex-direction: row;
+  color: black;
 }
